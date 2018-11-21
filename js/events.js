@@ -9,13 +9,15 @@ function getIt() {
       alert('Hey!');
     });
 }
-function frameIt() {
-    $('.tasty').on("load", function()) {
 
-    }
+function frameIt() {
+    $('img').on("load", function() {
+      $('img').addClass('tasty');
+    });
 }
 
 $(document).ready(function(){
 // call functions here
   getIt();
+
 });
