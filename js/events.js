@@ -22,6 +22,14 @@ function submitIt() {
     });
 }
 
+function pressIt() {
+    $('#typing').on('keydown', function() {
+      if(key.which == 71){
+        alert('g was pressed');
+      }
+  });
+}
+
 $(document).ready(function(){
 // call functions here
   getIt();
